@@ -15,7 +15,7 @@ inquirer
     qr_svg.pipe(fs.createWriteStream("qr_img.png"));
     fs.writeFile("URL.txt",url,(err)=>{
         if(err) throw err;
-        console.log("file saved");
+        console.log("QR code Generated and URL saved");
     })
   })
   .catch((error) => {
